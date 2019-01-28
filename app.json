@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/welcome/index",
+    
+    "pages/carte/index",
+    "pages/myCart/index",
+    "pages/hot/index",
+    "pages/dishOrders/index",
+
+    "pages/vip/index",
+    "pages/myGrade/index",
+    "pages/getGrade/index",
+    "pages/myIntegral/index",
+    "pages/myCards/index",
+    "pages/myCoupon/index",
+    "pages/myOrders/index",
+    "pages/myPlaces/index",
+    "pages/activities/index",
+    "pages/userInfo/index",
+
+    "pages/index/index",
+    "pages/userCenter/index",
+    "pages/detail/index",
+    "pages/evaluate/index"
+  ],
+  "tabBar": {
+    "backgroundColor": "#35353E",
+    "color": "#86868C",
+    "selectedColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/homeHover.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/carte/index",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/homeHover.png",
+        "text": "菜单"
+      },
+      {
+        "pagePath": "pages/userCenter/index",
+        "iconPath": "assets/user.png",
+        "selectedIconPath": "assets/userHover.png",
+        "text": "会员中心"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#202020",
+    "navigationBarTitleText": "春暖花开",
+    "navigationBarTextStyle": "white"
+  }
+}

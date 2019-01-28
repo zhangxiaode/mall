@@ -1,0 +1,174 @@
+/**index.wxss**/
+
+page {
+  height: 100%;
+}
+
+.carte {
+  background: #e5e2ef;
+  position: relative;
+  height: 100%;
+}
+
+.carteWrap {
+}
+
+.carteWrap .carteBtns {
+  border-radius: 6rpx;
+  background: #fcfcfd;
+  margin: 40rpx 20rpx;
+  height: 135rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carteWrap .carteBtnsItem {
+  flex: 1;
+  border-left: solid 1rpx #efeff0;
+  border-right: solid 1rpx #efeff0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carteWrap .carteBtnsItem image {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.carteWrap .carteBtnsItem text {
+  font-size: 24rpx;
+}
+
+.carteList {
+}
+
+.carteList .carteBox {
+}
+
+.carteList .carteHd {
+  height: 100rpx;
+  text-align: center;
+}
+
+.carteList .carteHd text {
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+  padding: 0 30px;
+}
+
+.carteList .carteHd text:before, .carteList .carteHd text:after {
+  content: "";
+  position: absolute;
+  left: -60rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 3rpx;
+  background: #ceccd7;
+  width: 60rpx;
+}
+
+.carteList .carteHd text:after {
+  left: auto;
+  right: -30px;
+}
+
+.carteList .carteBd {
+}
+
+.copyRight {
+  color: #b6b3b6;
+  font-size: 24rpx;
+  text-align: center;
+  padding: 180rpx 0 45rpx;
+}
+
+.carteMenusMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.65);
+  transition: all 0.3s;
+  display: none;
+}
+
+.showMenuMask {
+  display: block;
+}
+
+.carteMenus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.carteMenus .menuList {
+  background: #e3e2e2;
+  width: 0;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.showMenu .menuList {
+  width: 290rpx;
+}
+
+.carteMenus .openMenus {
+  background: #e3e2e2;
+  width: 60rpx;
+  height: 100rpx;
+  padding-right: 15rpx;
+  position: absolute;
+  top: 50%;
+  right: -74rpx;
+  transform: translateY(-50%);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carteMenus .openMenus image {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.carteMenus .openMenus text {
+  font-size: 22rpx;
+  color: #8e8c8f;
+}
+
+.basket {
+  border-radius: 63rpx;
+  border: solid 5rpx #fff;
+  background: rgba(220, 80, 50, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 116rpx;
+  height: 116rpx;
+  position: fixed;
+  bottom: 40rpx;
+  right: 30rpx;
+}
+
+.basket image {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.basket text {
+  font-size: 24rpx;
+  color: #fff;
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "evalItem": "/components/evalItem/index"
+  }
+}

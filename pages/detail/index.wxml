@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="detail">
+  <view class="goodsPhoto">
+    <image src="/assets/item.jpg"></image>
+    <view class="likes {{changeLike == 1 ? 'liked' : ''}}" bindtap="changeLike">
+      <image src="{{changeLike == 0 ? '/assets/like.svg' : '/assets/liked.svg'}}"></image>
+      <text>3人喜欢</text>
+    </view>
+  </view>
+  <view class="goodsInfo">
+    <view class="goodsName">千岛湖鱼头</view>
+    <view class="goodsSales">月售222份</view>
+    <view class="price">
+      <text>￥ 168.00/份</text>
+      <view class="goodsEvals">
+        <image src="/assets/pungentIcon.svg"></image>
+        <image src="/assets/pungentIcon.svg"></image>
+        <image src="/assets/goodIcon.svg"></image>
+        <image src="/assets/goodIcon.svg"></image>
+        <image src="/assets/goodIcon.svg"></image>
+      </view>
+    </view>
+  </view>
+  <view class="goodsFlavor">
+    <view class="arrowBtnWrap">
+      <arrowBtn arrowData="{{goodsFlavor}}"></arrowBtn>
+    </view>
+  </view>
+  <view class="goodsDetail">
+    <view class="goodsDetailHd">商品详情</view>
+    <view class="goodsDetailBd">正常情况下出菜时间30分钟左右</view>
+  </view>
+  <view class="copyRight">金风凝香 提供技术支持</view>
+  <view class="addCart">
+    <text class="cartTit">数量</text>
+    <view class="nums">
+      <view class="numsBtn minus {{cartNum < 1 ? 'disabled' : ''}}" bindtap="handleMinus">
+        <image src="/assets/minus.svg"></image>
+      </view>
+      <input wx:if="{{numFocus}}" placeholder="0" maxlength='3' type="number" value="{{cartNum}}" cursor-spacing="100" focus="{{numFocus}}" bindinput="changeNum" bindblur="numBlur" />
+      <view wx:else class="replaceInput" bindtap="handleFocus">{{cartNum}}份</view>
+      <view class="numsBtn plus {{cartNum >= 999 ? 'disabled' : ''}}" bindtap="handlePlus">
+        <image src="/assets/plus.svg"></image>
+      </view>
+    </view>
+    <view class="addCartBtn">加入购物车</view>
+  </view>
+</view>
